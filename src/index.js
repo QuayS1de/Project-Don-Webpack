@@ -1,9 +1,9 @@
 import "/styles/css/style.css"
 import "/styles/sass/style.sass"
-// import * as $ from 'jquery'
+import * as $ from 'jquery'
 // import * as THREE from 'three'
 // import WAVES from 'vanta/dist/vanta.waves.min.js'
-// import './js/app.js'
+import './js/app.js'
 
 
 

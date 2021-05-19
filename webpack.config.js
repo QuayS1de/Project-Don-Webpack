@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 module.exports = {
     entry: {
         main: './src/index.js'
@@ -10,7 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     devServer: {
-        port: 8080
+        port: 9000
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -36,17 +37,17 @@ module.exports = {
                     },
                 ]
             },
-            {
-                test: /\.(png|jpg|gif)$/i,
-                use: [
-                  {
-                    loader: 'url-loader',
-                    options: {
-                      limit: 8192,
-                    },
-                  },
-                ],
-            },
+            // {
+            //     test: /\.(png|jpg|gif)$/i,
+            //     use: [
+            //       {
+            //         loader: 'url-loader',
+            //         options: {
+            //           limit: 8192,
+            //         },
+            //       },
+            //     ],
+            // },
         ]
     },
 }
