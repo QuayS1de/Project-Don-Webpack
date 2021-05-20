@@ -11,13 +11,17 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     devServer: {
-        port: 9000
+        port: 8000
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src/index.html')
         }),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        // new webpack.ProvidePlugin({ //импорт jquery 
+        //     $: 'jquery',
+        //     jQuery: 'jquery'
+        // }),
     ],
     module: {
         rules: [
@@ -33,21 +37,10 @@ module.exports = {
                 test: /\.(png|jpe?g|gif|svg)$/i, //если нужно обработать ещё какие-то файлы, то можно добавить в этот список
                 use: [
                     {
-                      loader: 'file-loader',
+                      loader: 'file-loader'
                     },
                 ]
             },
-            // {
-            //     test: /\.(png|jpg|gif)$/i,
-            //     use: [
-            //       {
-            //         loader: 'url-loader',
-            //         options: {
-            //           limit: 8192,
-            //         },
-            //       },
-            //     ],
-            // },
         ]
     },
 }

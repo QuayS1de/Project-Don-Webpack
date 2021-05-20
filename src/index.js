@@ -1,10 +1,15 @@
 import "/styles/css/style.css"
+// import "/styles/css/mobile.css"
 import "/styles/sass/style.sass"
-import * as $ from 'jquery'
-// import * as THREE from 'three'
-// import WAVES from 'vanta/dist/vanta.waves.min.js'
+import THREE from 'three'
+// import WAVES from 'vanta.waves.js'
 import './js/app.js'
 
+//импорт jquery 
+import $ from 'jquery'
+global.jQuery = $;
+global.$ = $;
+//-------------
 
 
 import pic1 from './img/benjamin-lambert-333681-unsplashanimal.png'
