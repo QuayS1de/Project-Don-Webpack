@@ -1,2 +1,341 @@
-// body
-//     background-color: black
+body
+    margin: 0
+    -webkit-text-stroke: 0.35px #FDB461
+
+*, *:after, *:before
+    box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6
+    margin: 0
+
+.page
+    position: relative
+    overflow: hidden
+
+.container
+    max-width: 1300px
+    margin: auto
+    padding-top: 35px
+
+.header
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 1000
+
+.header-inner
+    font-family: 'Montserrat', sans-serif
+    display: flex
+    flex-basis: 0
+    flex-grow: 1
+    align-items: center
+
+.header-logo
+    font-weight: 700
+    -webkit-text-stroke: 0.35px #FDB461
+    font-family: 'Poppins', sans-serif
+    user-select: none
+    color: #fff
+
+.header-links
+    display: flex
+    justify-content: flex-end
+    flex-wrap: wrap
+    flex-basis: 0
+    flex-grow: 1
+    align-items: center
+    font-size: 14px
+    a
+        margin-left: 25px
+        -webkit-text-stroke: 0.35px #FDB461
+        font-weight: 600
+        cursor: pointer
+        text-decoration: none
+        color: #fff
+        &:first-child
+            margin: 0
+        &:last-child
+            padding: 5px 10px
+            border-radius: 4px
+            background-color: rgba(253, 180, 97, 0.8)
+        &:last-child:hover
+            transform: scale(1.15)
+            transition: all .1s linear
+
+.list
+    display: inline-block
+    line-height: 1
+    text-decoration: none
+    position: relative
+    &::after
+        display: block
+        content: ""
+        background-color: #bcbcbc
+        height: 2px
+        width: 0%
+        left: 50%
+        position: absolute
+        -webkit-transition: width .3s ease-in-out
+        -moz--transition: width .3s ease-in-out
+        transition: width .3s ease-in-out
+        -webkit-transform: translateX(-50%)
+        -moz-transform: translateX(-50%)
+        transform: translateX(-50%)
+        margin-top: 3px
+    &:last-child::after
+        width: 0
+        height: 0
+    &:hover:after
+        width: 100%
+    &:focus:after
+        width: 100%
+
+.section1
+    width: 988px
+    height: 100%
+    margin: 0 auto
+    margin-top: 210px
+    margin-bottom: 450px
+
+.pre-section1
+    h1
+        font-size: 78px
+        margin-bottom: 50px
+    p
+        margin: 0
+        max-width: 762px
+        height: 100%
+        margin-bottom: 28px
+        -webkit-text-stroke: 0.25px #FDB461
+        font-size: 18px
+
+.button1,
+.button2
+    font-family: 'Poppins', sans-serif
+    font-size: 18px
+    -webkit-text-stroke: 0.35px #FDB461
+    background-color: rgba(253, 180, 97, 0.8)
+    border-radius: 8px
+    border: 2px solid rgba(62, 34, 3, 0.8)
+    /*    outline: none;*/
+    padding: 5px 15px
+    margin-top: 22px
+    margin-right: 24px
+    outline: none
+    cursor: pointer
+
+.button1:hover
+    transform: scale(1.1)
+    transition: all .2s linear
+
+.button2
+    background-color: #fff
+    &:hover
+        transform: scale(1.1)
+        transition: all .2s linear
+
+.section2
+    max-width: 1230px
+    height: 100%
+    margin: 0 auto
+    padding-bottom: 175px
+
+.pre-section2
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+.pre-section2-text
+    margin-top: 65px
+
+    a
+        border-bottom: 3px solid #FDB461
+        font-family: 'Poppins', sans-serif
+        font-size: 18px
+        color: #FDB461
+        cursor: pointer
+        &:hover
+            color: #fff
+            font-size: 18.5px
+            transition: all .15s ease-in
+    h1
+        font-size: 64px
+        max-width: 600px
+        -webkit-text-stroke: 0.35px #FDB461
+        color: #fff
+        margin-bottom: 44px
+    p
+        max-width: 540px
+        flex-wrap: wrap
+        font-size: 18px
+        margin-bottom: 48px
+        color: #fff
+
+.pre-section2-img
+    position: relative
+    margin-right: 300px
+
+.pic1,
+.pic2,
+.pic3
+    position: absolute
+    max-height: 376px
+
+.pic1
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-90%, -100%)
+    z-index: 3
+
+.pic2
+    transform: translate(-30%, -72%)
+    z-index: 2
+
+.pic3
+    transform: translate(-70%, -47%)
+    z-index: 1
+
+.quote
+    display: flex
+    padding-top: 120px
+    justify-content: space-around
+    max-width: 500px
+    img
+        width: 64px
+        height: 64px
+    div
+        p
+            &:first-child
+                font-family: 'Poppins', sans-serif
+                font-style: italic
+                -webkit-text-stroke: 0.2px #FDB461
+                color: #fff
+                font-size: 14px
+                margin-top: 0
+                margin-left: 24px
+                margin-bottom: 16px
+                word-spacing: 2px
+            &:last-child
+                font-family: 'Poppins', sans-serif
+                font-style: italic
+                color: #FDB461
+                text-decoration: underline
+                font-size: 14px
+                margin-left: 22px
+
+.quote2
+    padding: 0
+
+.section4
+    margin-bottom: 0
+
+.pre-section4
+    h1
+        font-size: 64px
+        max-width: 800px
+        color: #fff
+    p
+        max-width: 560px
+        color: #fff
+
+.copyright
+    margin-top: 220px
+    padding-bottom: 220px
+    font-family: 'Poppins', sans-serif
+    font-size: 16px
+    color: #fff
+    user-select: none
+
+.bgimage
+    background: url(../../src/img/first-bg.jpg) no-repeat
+    background-position: center
+    height: 100%
+    object-fit: cover
+    z-index: -1
+    background-size: cover
+    filter: none
+
+.bgimage2
+    background: url(../../src/img/second-bg.jpg) no-repeat
+    background-position: center
+    height: 100%
+    object-fit: cover
+    z-index: 99
+    background-size: cover
+    filter: none
+
+.section3
+    max-width: 1230px
+    height: 100%
+    margin: 0 auto
+    padding-top: 175px
+
+.pre-section3
+    display: flex
+    flex-direction: row-reverse
+    align-items: center
+    justify-content: flex-end
+    margin: auto
+    padding-left: 125px
+
+.pre-section3-text
+    margin-top: 65px
+    a
+        border-bottom: 3px solid #FDB461
+        font-family: 'Poppins', sans-serif
+        font-size: 18px
+        color: #FDB461
+        cursor: pointer
+        &:hover
+            color: #fff
+            font-size: 18.5px
+            transition: all .15s ease-in
+    h1
+        font-size: 64px
+        height: 100%
+        max-width: 600px
+        flex-wrap: wrap
+        -webkit-text-stroke: 0.35px #FDB461
+        color: #fff
+        margin-bottom: 44px
+    p
+        max-width: 540px
+        flex-wrap: wrap
+        font-size: 18px
+        margin-bottom: 48px
+        color: #fff
+
+.pre-section3-img
+    position: relative
+    margin-right: 300px
+
+.pic4,
+.pic5,
+.pic6
+    position: absolute
+    max-height: 376px
+
+.pic4
+    transform: translate(10%, -87%)
+    z-index: 3
+
+.pic5
+    transform: translate(60%, -125%)
+    z-index: 2
+
+.pic6
+    transform: translate(70%, -62%)
+    z-index: 1
+
+.sidebar
+    display: none
+
+.sidebar-dws
+    display: none
+
+.btn-switch-display
+    display: none
+
+.btn-switch-color
+    color: black !important

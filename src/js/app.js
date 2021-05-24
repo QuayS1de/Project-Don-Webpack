@@ -1,21 +1,22 @@
+
 document.addEventListener('DOMContentLoaded', function(){
+        
 
-
-    VANTA.WAVES({
-      el: ".header",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 100.00,
-      minWidth: 100.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0xf0f02,
-      shininess: 52.00,
-      waveHeight: 116.00,
-      waveSpeed: 0.30,
-      zoom: 1.5
-    })
+//     VANTA.WAVES({
+//       el: ".header",
+//       mouseControls: true,
+//       touchControls: true,
+//       gyroControls: false,
+//       minHeight: 100.00,
+//       minWidth: 100.00,
+//       scale: 1.00,
+//       scaleMobile: 1.00,
+//       color: 0xf0f02,
+//       shininess: 52.00,
+//       waveHeight: 116.00,
+//       waveSpeed: 0.30,
+//       zoom: 1.5
+//     })
 
 
     
@@ -108,6 +109,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     })
         })
     }
+//     wow.init();
 })
 
     

@@ -1,0 +1,260 @@
+@media (max-width: 1100px) {
+  .section1 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .pre-section1 h1 {
+    width: 60%;
+  }
+
+  .pic1 {
+    -webkit-transform: translate(10%, -110%);
+    transform: translate(10%, -110%);
+  }
+
+  .pic2 {
+    -webkit-transform: translate(10%, -37%);
+    transform: translate(10%, -37%);
+  }
+
+  .pic3 {
+    -webkit-transform: translate(10%, 27%);
+    transform: translate(10%, 27%);
+    z-index: 3;
+  }
+
+  .pic4 {
+    -webkit-transform: translate(10%, -130%);
+    transform: translate(10%, -130%);
+    z-index: 4;
+  }
+
+  .pic5 {
+    -webkit-transform: translate(10%, -57%);
+    transform: translate(10%, -57%);
+    z-index: 3;
+  }
+
+  .pic6 {
+    -webkit-transform: translate(10%, 17%);
+    transform: translate(10%, 17%);
+    z-index: 2;
+  }
+
+  .pre-section2 {
+    padding-right: 60px;
+  }
+
+  .pre-section3 {
+    padding-left: 60px;
+  }
+
+}
+
+@media (max-width: 830px) {
+  .sidebar {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    z-index: 1999;
+  }
+
+  .section1 {
+    margin: 0;
+  }
+
+  .pre-section1 p {
+    max-width: 600px;
+  }
+
+  .sidebar-dws {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#3d3000), color-stop(#392107), color-stop(#2d160d), color-stop(#1c0d0c), to(#000000));
+    background-image: linear-gradient(to right bottom, #3d3000, #392107, #2d160d, #1c0d0c, #000000);
+  }
+
+  .sidebar-dws ul {
+    -webkit-transition: 1s;
+    transition: 1s;
+    width: 100%;
+    padding: 0;
+  }
+
+  .sidebar-dws ul li {
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: white;
+    text-align: center;
+  }
+
+  .sidebar-dws ul li:not(:first-child):hover {
+    background-color: #c1c1c1;
+  }
+
+  .sidebar-dws ul li:hover a {
+    color: #141414;
+  }
+
+  .sidebar-dws ul li:first-child {
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: none;
+    font-size: 24px;
+    letter-spacing: 6px;
+  }
+
+  .sidebar-dws ul li a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    opacity: 0.9;
+  }
+
+  .sidebar-dws i:active {
+    font-size: 28px;
+  }
+
+  .button-add {
+    position: absolute;
+    right: 100%;
+    top: 21px;
+    font-size: 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background-color: #3b2d02;
+    color: #fff !important;
+    padding: 5px;
+  }
+
+  .button-add2 {
+    position: absolute;
+    right: 10px;
+    top: 21px;
+    margin-left: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+  .btn-switch-display {
+    display: none;
+  }
+
+  .btn-switch-color {
+    color: black;
+  }
+
+  .header {
+    display: none;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .pre-section1 h1 {
+    font-size: 58px;
+    width: 80%;
+  }
+
+  .pre-section1 p {
+    max-width: none;
+    height: auto;
+  }
+
+  .pre-section4 h1 {
+    max-width: 400px;
+  }
+
+  .pre-section2-img,
+  .pre-section3-img {
+    margin: 0;
+  }
+
+  .pre-section2,
+  .pre-section3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .pic1,
+  .pic2,
+  .pic3,
+  .pic4,
+  .pic5,
+  .pic6 {
+    top: auto;
+    left: auto;
+    position: static;
+    -webkit-transform: none;
+    transform: none;
+    z-index: inherit;
+    display: inline-block;
+    max-width: 32%;
+    height: auto;
+  }
+
+  .section1 {
+    width: inherit;
+    max-width: 988px;
+    margin: 0;
+    padding: 0 15px;
+  }
+
+  .section2 {
+    margin-top: 200px;
+  }
+
+  .pre-section2-text,
+  .pre-section3-text {
+    padding: 0 15px;
+  }
+
+  .section3 {
+    padding-top: 0;
+  }
+
+  .section4 {
+    padding-top: 200px;
+  }
+
+}
+
+@media (max-width: 410px) {
+  .pre-section1 h1 {
+    margin-top: 10px;
+    font-size: 42px;
+    width: 100%;
+  }
+
+  .pre-section2-text h1 {
+    font-size: 42px;
+    width: 100%;
+    color: black;
+  }
+
+  .pre-section2-text p {
+    padding: 5px;
+  }
+
+  .pre-section3-text h1 {
+    font-size: 42px;
+    width: 100%;
+  }
+
+}

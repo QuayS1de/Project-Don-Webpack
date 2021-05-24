@@ -1,15 +1,23 @@
-import "/styles/css/style.css"
-// import "/styles/css/mobile.css"
-import "/styles/sass/style.sass"
-import THREE from 'three'
-// import WAVES from 'vanta.waves.js'
-import './js/app.js'
 
+import "/styles/css/style.css"
+import "/styles/css/media.css"
+import "/styles/sass/style.sass"
+import "/styles/sass/media.sass"
+import './js/app.js'
 //импорт jquery 
 import $ from 'jquery'
 global.jQuery = $;
 global.$ = $;
 //-------------
+import WOW from '../node_modules/wowjs/dist/wow'
+// import THREE from 'three'
+// let vanta = require('vanta/dist/vanta.waves.min.js'); 
+
+
+
+
+
+
 
 
 import pic1 from './img/benjamin-lambert-333681-unsplashanimal.png'
